@@ -1,8 +1,7 @@
 import React from "react";
-import { About } from "../lib/interface";
 import Image from 'next/image'
-import logo from '../images/logo.png'
-import gingerbread from '../images/gingerbread.jpg'
+import logo from '@/images/logo.png'
+import gingerbread from '@/images/gingerbread.jpg'
 
 export default async function About(){
     return (
