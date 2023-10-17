@@ -15,14 +15,14 @@ type SocialIconProps = {
 
 const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
-    return null
+  return null
 
   const SocialSvg = components[kind]
 
   return (
     <a
       className="text-sm text-gray-500 transition hover:text-gray-600"
-      target="_blank"
+      target=""
       rel="noopener noreferrer"
       href={href}
     >

@@ -2,7 +2,7 @@
 
 import { Gallery } from "react-grid-gallery";
 
-import Image from "next/image"
+import { funds0 , funds1 } from "@/data/images.tsx"
 
 export default function IndexPage() {
 
@@ -21,6 +21,8 @@ export default function IndexPage() {
                     We make events blah blah blahj  raise money lalalallala. example:
                 </h1>
             </div>
+
+            <Gallery images={funds0} />
 
         </div>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Themebutton from "./ThemeButton";
+
 import SocialIcon from '@/components/social-icons';
 import siteMetadata from '@/data/siteMetadata'
 
@@ -10,7 +11,13 @@ export default function Navbar() {
         <div className="flex justify-between items-center w-full">
           <div className="flex">
             <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
-            <div className="ml-6 scale-125"><SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} /></div>
+            <div className="ml-6 scale-125">
+              <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
+            </div>
+            <div className="ml-6 scale-125">
+              <SocialIcon kind="home" href={`/`} size={6} />
+            </div>
+
           </div>
 
           <div className ="flex justify-between items-center">

@@ -1,7 +1,7 @@
 "use client"
 
 import { Gallery } from "react-grid-gallery";
-import { row0 , row1 } from "@/data/images"
+import { row0 , row1 } from "@/data/images.tsx"
 
 export default function IndexPage() {
 

@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={` ${eb_garamond.className} bg-[#fffcf9] text-black dark:bg-[#121212] dark:selection:bg-[#334eac] dark:text-white h-full selection:bg-[#d0e3ff]`}
+        className={` ${eb_garamond.className} bg-[#fffcf9] text-[#081f3c] dark:bg-[#121212] dark:selection:bg-[#334eac] dark:text-white h-full selection:bg-[#d0e3ff]`}
       >
         <Providers>
           <Navbar />

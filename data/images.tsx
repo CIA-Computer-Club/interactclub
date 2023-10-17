@@ -46,4 +46,48 @@ const row1 = [
     } 
 ];
 
-export { row0, row1}
+const funds0 = [
+    {
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1163783513150079056/image.png?ex=6540d4db&is=652e5fdb&hm=f46ebd54439a2224fdd2edd147710fc4bcc8914aaa57dd892f8ec0675a7ed7b5&=&width=620&height=324",
+        width: 620,
+        height: 324,
+        thumbnailCaption: "Movie Night",
+    },
+    {
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1163783513544347648/image.png?ex=6540d4db&is=652e5fdb&hm=208336ae09aa8aea1004bd27a24d036497437fad2e0a50cbf71f53fdf3ab742d&=&width=326&height=324",
+        width: 620,
+        height: 324,
+        thumbnailCaption: "Food Stalls",
+    },
+    {
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1163526943082283119/movie2.jpg?ex=653fe5e8&is=652d70e8&hm=38598a498c8d2d5068b39707ab6b49563d40d0f485285df19e964928c9c48fcc&=&width=420&height=324",
+        width: 620,
+        height: 324,
+        thumbnailCaption: "Haunted House",
+    },
+];
+
+const funds1 = [
+    {
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1163783513150079056/image.png?ex=6540d4db&is=652e5fdb&hm=f46ebd54439a2224fdd2edd147710fc4bcc8914aaa57dd892f8ec0675a7ed7b5&=&width=480&height=324",
+        width: 1797.4,
+        height: 1074.4,
+        thumbnailCaption: "Movie Night",
+    },
+    {
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1163783513544347648/image.png?ex=6540d4db&is=652e5fdb&hm=208336ae09aa8aea1004bd27a24d036497437fad2e0a50cbf71f53fdf3ab742d&=&width=326&height=324",
+        width: 1797.4,
+        height: 1074.4,
+        alt: "Food Stalls",
+    },
+    {
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1163526943082283119/movie2.jpg?ex=653fe5e8&is=652d70e8&hm=38598a498c8d2d5068b39707ab6b49563d40d0f485285df19e964928c9c48fcc&=&width=420&height=324",
+        width: 1797.4,
+        height: 1074.4,
+        alt: "Movie Night",
+    }
+];
+
+
+
+export { row0, row1, funds0, funds1}

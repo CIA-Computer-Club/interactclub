@@ -1,52 +1,40 @@
 import React from "react";
 import Image from 'next/image'
-import logo from '@/images/logo.png'
-import gingerbread from '@/images/gingerbread.jpg'
+import p2022 from 'images/gingerbread.jpg'
+import ProfileCard from '@/components/ProfileCard'
 
-export default async function About(){
+export default function About(){
     return (
-    <div className="divide-y divide-gray-400 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            About
-            </h1>
-        </div>
-        <ul>
-          <li className="flex item-centers md:item-centers py-4">
-              <div>
-                <Image src={logo} height={160} width={160} alt="Logo"/>
+        <div className="flex flex-col mt-8">
+            <div className="flex flex-wrap justify-center text-center">
+              <div className="w-full lg:w-6/12 px-4">
+                <h1 className="text-6xl font-medium text-[#081f3c]">
+                  ABOUT <span className="text-[#7096d1]">US</span></h1>
+                <p className="text-2xl font-light">student led club by</p>
+                <hr className="h-0.5 my-4 bg-[#7096d1] border-none"></hr>
               </div>
-                <div className="ml-12 w-max">
-                  <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                    Interact Club
-                  </h3>
-                  <p>
-                    A Student-Led Club <br/> 
-                    <span className ="text-[#7096d1]">
-                        2019-Present</span><br/>
-                    <span className="text-gray-500 dark:text-gray-400 line-clamp-2">
-                    For everyone and the community.</span>
-                </p>
-              </div>    
-          </li>
-          <li className="flex item-centers md:item-centers py-4">
-              <div>
-                <Image className="rounded-full" src={gingerbread} height={160} width={160} alt="Gingerbread"/>
-              </div>
-                <div className="ml-12 w-max">
-                  <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                    Ginger Bread
-                  </h3>
-                  <p>
-                    Vice President <br/> 
-                    <span className ="text-[#7096d1]">
-                        2023-2024</span><br/>
-                    <span className="text-gray-500 dark:text-gray-400 line-clamp-2">
-                        For everyone and the community.</span>
-                </p>
-              </div>    
-          </li>
-      </ul>
-    </div>
+          </div>
+          <p className="text-center text-2xl font-light italic mb-6">leaders of year 2023-2024</p>
+          <div className="flex flex-wrap">
+            <ProfileCard src={"https://media.discordapp.net/attachments/1163526744570081310/1163822215947624488/image.png?ex=6540f8e7&is=652e83e7&hm=54542708fc33fe30370a7d276b07dd9ed9a0184fe77deb6d3719f4386f43d51c&=&width=400&height=400"} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+          </div>
+        <p className="text-center text-2xl font-light italic mb-6">leaders of year 2022-2023</p>
+          <div className="flex flex-wrap">
+            <ProfileCard src={"https://media.discordapp.net/attachments/1163526744570081310/1163822215947624488/image.png?ex=6540f8e7&is=652e83e7&hm=54542708fc33fe30370a7d276b07dd9ed9a0184fe77deb6d3719f4386f43d51c&=&width=400&height=400"} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+          </div>
+        <p className="text-center text-2xl font-light italic mb-6">leaders of year 2021-2022</p>
+          <div className="flex flex-wrap">
+          <ProfileCard src={"https://media.discordapp.net/attachments/1163526744570081310/1163822215947624488/image.png?ex=6540f8e7&is=652e83e7&hm=54542708fc33fe30370a7d276b07dd9ed9a0184fe77deb6d3719f4386f43d51c&=&width=400&height=400"} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+            <ProfileCard src={""} position={"President"} name={"Monita"}/>
+          </div>
+      </div>
     )
 }
