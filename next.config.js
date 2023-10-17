@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: ["cdn.sanity.io"],
+    domains: ["media.discordapp.net"],
   },
 };
 
