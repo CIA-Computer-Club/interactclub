@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import { Providers } from "@/components/Providers";
 import "./globals.css";
 import { EB_Garamond } from "next/font/google";
 
@@ -22,12 +21,10 @@ export default function RootLayout({
       <body
         className={` ${eb_garamond.className} bg-[#fffcf9] text-[#081f3c] dark:bg-[#121212] dark:selection:bg-[#334eac] dark:text-white h-full selection:bg-[#d0e3ff]`}
       >
-        <Providers>
           <Navbar />
           <main className="mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </main>
-        </Providers>
       </body>
     </html>
   );

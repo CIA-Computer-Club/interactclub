@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Themebutton from "./ThemeButton";
+import Link from "@/components/Link";
 
 import SocialIcon from '@/components/social-icons';
 import siteMetadata from '@/data/siteMetadata'
@@ -21,9 +20,11 @@ export default function Navbar() {
 
           <div className ="flex justify-between items-center">
             
-            <Link href="/doing"><p className="text-xl font-bold italic drop-shadow-lg">what we do</p></Link>
-            <span className="mx-4 mb-6 text-5xl">.</span>
-            <Link href="/about"><p className="mr-4 text-xl font-bold italic drop-shadow-lg">about us</p></Link>
+            <Link className="text-xl font-bold italic drop-shadow-lg" href="/doing">what we do</Link>
+            <Link className="mx-4 mb-7 text-5xl" href="https://github.com/CIA-Computer-Club/interactclub" target="_blank">
+              <span className="">.</span>
+            </Link>
+            <Link className="mr-4 text-xl font-bold italic drop-shadow-lg" href="/about">about us</Link>
           </div>
         </div>
       </div>
