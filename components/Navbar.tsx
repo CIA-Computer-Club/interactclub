@@ -20,11 +20,11 @@ export default function Navbar() {
 
           <div className ="flex justify-between items-center">
             
-            <Link className="text-xl font-bold italic drop-shadow-lg" href="/doing">what we do</Link>
-            <Link className="mx-4 mb-7 text-5xl" href="https://github.com/CIA-Computer-Club/interactclub" target="_blank">
+            <Link href="/doing"><p className="text-xl font-bold italic drop-shadow-lg">what we do</p></Link>
+            <Link className="mx-4 mb-8 text-5xl" href="https://github.com/CIA-Computer-Club/interactclub" target="_blank">
               <span className="">.</span>
             </Link>
-            <Link className="mr-4 text-xl font-bold italic drop-shadow-lg" href="/about">about us</Link>
+            <Link href="/about"><p className="mr-4 text-xl font-bold italic drop-shadow-lg">about us</p></Link>
           </div>
         </div>
       </div>

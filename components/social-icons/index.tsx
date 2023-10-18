@@ -10,11 +10,11 @@ const components = {
 type SocialIconProps = {
   kind: keyof typeof components
   href: string | undefined
-  target: string
+  target?: string
   size?: number
 }
 
-const SocialIcon = ({ kind, href, target, size = 8 }: SocialIconProps) => {
+const SocialIcon = ({ kind, href, target="", size = 8 }: SocialIconProps) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
   return null
 

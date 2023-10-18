@@ -1,31 +1,28 @@
 "use client"
 
 import { Gallery } from "react-grid-gallery";
-
-import Image from "next/image"
+import { help0 , help1 } from "@/data/images.tsx"
 
 export default function IndexPage() {
 
     return (
-        <div className="divide-y divide-gray-400 dark:divide-gray-700">
         <div className="flex flex-col mt-8">
-            <div className="flex flex-wrap mb-3">
-                <div className="w-full lg:w-6/12 px-4">
-                    <h1 className="text-[82px] font-semibold text-[#081f3c]">
-                        HOW WE <span className="text-[#7096d1]">HELP</span>
-                    </h1>
+            <div className="flex flex-wrap mb-24">
+                <div className="w-full md:w-full lg:w-full">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <h1 className="text-6xl font-medium text-[#081f3c]">
+                            HOW WE <span className="text-[#7096d1]">HELP</span>
+                        </h1>
+                    </a>
+                    <p className="text-2xl mt-2">working with NGOS, we are able to:</p>
+                    <div className="justify-center">
+                        <Gallery images={help0} margin={20} rowHeight={400} />
+                    </div>
+                    <div className="justify-center">
+                        <Gallery images={help1} margin={20} rowHeight={400} />
+                    </div>
                 </div>
             </div>
-            <div className="w-full lg:w-6/12 px-4">
-                <h1 className="text-xl font-medium text-[#081f3c]">
-                    working with NGOS, we are able to:
-                </h1>
-            </div>
-
-        </div>
-
-
-
         </div>
     )
 }
