@@ -8,16 +8,14 @@ export default function Navbar() {
       <div className="flex justify-between h-16">
         <div className="flex justify-between items-center w-full">
           <div className="flex">
-              <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
-              <div className="ml-6 scale-125">
-                <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
-              </div>
-              <div className="ml-5 scale-100">
-                <SocialIcon kind="home" href={"/"} target="_blank" size={6} />
-              </div>
+            <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
+            <div className="ml-6 scale-125"><SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} /></div>
+            <div className="ml-6 scale-100"><SocialIcon kind="home" href={`/`} size={6} /></div>
+
           </div>
 
           <div className ="flex justify-between items-center">
+            
             <Link href="/doing"><p className="text-xl font-bold italic drop-shadow-lg">what we do</p></Link>
             <span className="mx-4 mb-6 text-5xl">.</span>
             <Link href="/about"><p className="mr-4 text-xl font-bold italic drop-shadow-lg">about us</p></Link>
