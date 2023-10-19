@@ -1,11 +1,11 @@
 "use client"
 
 import ImageBox from "@/components/ImageBox";
+import React from "react"
 import { row0, row1 } from "@/data/images";
 
 
 export default function IndexPage() {
-    
     return (
         <div className="flex flex-col mt-8">
             <div className="flex flex-wrap">
@@ -16,11 +16,20 @@ export default function IndexPage() {
                         </h1>
                     </a>
                     <div className="flex flex-wrap justify-center mt-8">
-                        {row0.map((row, i) => <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>)}
+                        
+                        {row0.map((row, i) => (
+                            <React.Fragment key={i}>
+                                <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>
+                            </React.Fragment>
+                        ))}
 
                     </div>
                     <div className="flex flex-wrap justify-center mt-8">
-                        {row1.map((row, i) => <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>)}
+                    {row1.map((row, i) => (
+                            <React.Fragment key={i}>
+                                <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>
+                            </React.Fragment>
+                        ))}
                     </div>
                 </div>
             </div>
