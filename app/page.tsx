@@ -1,24 +1,26 @@
 "use client"
 
-import { Gallery } from "react-grid-gallery";
-import { row0 , row1 } from "@/data/images.tsx"
+import ImageBox from "@/components/ImageBox";
+import { row0, row1 } from "@/data/images";
+
 
 export default function IndexPage() {
-
+    
     return (
         <div className="flex flex-col mt-8">
-            <div className="flex flex-wrap justify-center text-center">
+            <div className="flex flex-wrap">
                 <div className="w-full md:w-full lg:w-full">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                         <h1 className="text-3xl font-semibold text-center leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
                             INTERACT <span className="text-[#7096d1]">CLUB</span>
                         </h1>
                     </a>
-                    <div className="justify-center">
-                        <Gallery images={row0} margin={20} rowHeight={400} />
+                    <div className="flex flex-wrap justify-center mt-8">
+                        {row0.map((row, i) => <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>)}
+
                     </div>
-                    <div className="justify-center">
-                        <Gallery images={row1} margin={20} rowHeight={400} />
+                    <div className="flex flex-wrap justify-center mt-8">
+                        {row1.map((row, i) => <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>)}
                     </div>
                 </div>
             </div>
