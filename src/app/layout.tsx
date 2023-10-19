@@ -1,12 +1,13 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { EB_Garamond } from "next/font/google";
+import siteMetadata from "@/data/siteMetadata";
 
 const eb_garamond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Interact Club",
-  description: "Interact Club for Everyone",
+  title: siteMetadata.title,
+  description: siteMetadata.description,
 };
 
 export const revalidate = 60

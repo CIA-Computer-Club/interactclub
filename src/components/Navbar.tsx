@@ -8,10 +8,9 @@ export default function Navbar() {
       <div className="flex justify-between h-16">
         <div className="flex justify-between items-center w-full">
           <div className="flex">
-            <SocialIcon kind="instagram" href={siteMetadata.instagram} size={6} />
-            <div className="ml-6 scale-125"><SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} /></div>
-            <div className="ml-6 scale-100"><SocialIcon kind="home" href={`/`} size={6} /></div>
-
+            <SocialIcon kind="instagram" href={siteMetadata.instagram} target="_blank" size={6} />
+            <div className="ml-6 scale-125"><SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} target="_blank" size={6} /></div>
+            <div className="ml-6 scale-125"><SocialIcon kind="home" href={`${siteMetadata.home}`} size={6} /></div>
           </div>
 
           <div className ="flex justify-between items-center">
@@ -19,6 +18,22 @@ export default function Navbar() {
             <Link href="/doing"><p className="text-xl font-bold italic drop-shadow-lg">what we do</p></Link>
             <span className="mx-4 mb-6 text-5xl">.</span>
             <Link href="/about"><p className="mr-4 text-xl font-bold italic drop-shadow-lg">about us</p></Link>
+            <Link href="/horror">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>

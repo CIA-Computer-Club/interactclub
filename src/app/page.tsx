@@ -17,7 +17,6 @@ const Main = () => {
                 </h1>
             </a>
             <div className="flex flex-wrap justify-center mt-8">
-                
                 {row0.map((row, i) => (
                     <React.Fragment key={i}>
                         <ImageBox src={row.src} width={row.width} height={row.height}></ImageBox>

@@ -1,10 +1,10 @@
 "use client"
 
-import Image from "next/image"
-import Link from "next/link"
+import Image from "@/components/Image"
+import Link from "@/components/Link"
+import { block } from "million/react-server"
 
-export default function IndexPage() {
-
+const Main = () => {
     return (
         <div className="flex flex-col mt-8">
         <div className="flex flex-wrap justify-center text-center">
@@ -46,5 +46,14 @@ export default function IndexPage() {
             </div>
         </div>
     </div>
+    )
+}
+
+
+const MainBlock = block(Main);
+
+export default function IndexPage() {
+    return (
+        <MainBlock />
     )
 }

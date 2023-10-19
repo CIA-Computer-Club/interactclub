@@ -13,6 +13,7 @@ const siteMetadata = {
   email: 'ciafirstinteract@gmail.com',
   youtube: 'https://youtube.com',
   instagram: 'https://instagram.com/interact_ciafirst',
+  home: '/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

@@ -17,14 +17,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
+    "rootDirs": [
+      "src"
+    ],
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/lib/*": ["lib/*"],
-      "@/data/*": ["data/*"],
-      "@/layouts/*": ["layouts/*"],
-      "@/css/*": ["css/*"],
-      "@/images/*": ["images/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/components/*": ["src/components/*"],
+      "@/data/*": ["src/data/*"],
+      "@/css/*": ["src/css/*"],
     },
     "plugins": [
       {
@@ -35,14 +34,13 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.js",
-    "**/*.mjs",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.json",
-    ".contentlayer/generated",
-    ".contentlayer/generated/**/*.json",
-    ".next/types/**/*.ts"
-, "../interactclub/app/page.tsx"  ],
+    "src/**/*.js",
+    "src/**/*.mjs",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.json",
+    ".next/types/**/*.ts",
+    "src/../interactclub/app/page.tsx"  
+  ],
   "exclude": ["node_modules"]
 }
