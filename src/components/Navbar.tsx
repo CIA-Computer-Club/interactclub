@@ -10,7 +10,6 @@ export default function Navbar() {
           <div className="flex">
             <SocialIcon kind="instagram" href={siteMetadata.instagram} target="_blank" size={6} />
             <div className="ml-6 scale-125"><SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} target="_blank" size={6} /></div>
-            <div className="ml-6 scale-125"><SocialIcon kind="home" href={`${siteMetadata.home}`} size={6} /></div>
           </div>
 
           <div className ="flex justify-between items-center">
