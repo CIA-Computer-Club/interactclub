@@ -57,13 +57,13 @@ const funds0 = [
         src: "https://media.discordapp.net/attachments/1163526744570081310/1164566200513216583/IMG_4991.PNG?ex=6543adca&is=653138ca&hm=a5c6e157f5b6f7e29bb0fd3b122caa25c3f4cf968bbd24759349a8fcda2a81f2&=&width=620&height=324",
         width: 620,
         height: 324,
-        thumbnailCaption: "Second movie night",
+        thumbnailCaption: "Movie nights",
     },
     {
-        src: "https://media.discordapp.net/attachments/1163526744570081310/1164566331266453554/IMG_4990.PNG?ex=6543ade9&is=653138e9&hm=ac9502ebb22e1147689c9ece457fbffb9a0ba90f9f4eb62a9ea684263bf4eab9&=&width=620&height=324",
+        src: "https://media.discordapp.net/attachments/1163526744570081310/1169459593873731704/IMG_0353.JPG?ex=65557b1e&is=6543061e&hm=0a6f06df8aaaffe54ce7ad8f8856e4d3d4114c78ac9046c43f36a92d578a69b5&=&width=620&height=324",
         width: 620,
         height: 324,
-        thumbnailCaption: "Second Halloween",
+        thumbnailCaption: "Halloween",
     },
 ];
 

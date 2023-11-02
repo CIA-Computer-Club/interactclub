@@ -39,7 +39,7 @@ const Main = () => {
                 </Image>
                     <div className="text-center mt-4">
                         <h1 className="text-2xl font-medium mb-1">
-                            Helping Children by Donating Cheap Stuff
+                            Helping Children by Donating.
                         </h1>
                     </div>
                 </Link>
