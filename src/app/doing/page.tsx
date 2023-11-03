@@ -24,7 +24,7 @@ const Main = () => {
                 </Image>
                     <div className="text-center mt-4">
                         <h1 className="text-2xl font-medium mb-1">
-                            Raising Fund by Selling Overpriced Food
+                            Raising Fund by Selling Food
                         </h1>
                     </div>
                 </Link>
